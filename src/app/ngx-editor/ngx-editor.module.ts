@@ -10,7 +10,7 @@ import { WordsService } from './common/services/words.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, ReactiveFormsModule,HttpClientModule, PopoverModule.forRoot()],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, HttpClientModule, PopoverModule.forRoot()],
   declarations: [EditorComponent, ToolbarComponent],
   exports: [EditorComponent],
   providers: [CommandExecutorService, WordsService]

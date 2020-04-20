@@ -13,7 +13,7 @@ import * as Utils from '../common/utils/editor.utils';
 })
 
 export class ToolbarComponent implements OnInit {
-  synonymus : any;
+  synonymus: any;
 
   /** holds values of the insert image form */
   imageForm: FormGroup;
@@ -43,10 +43,10 @@ export class ToolbarComponent implements OnInit {
     this.synonymus = this._wordsService.getWords(selection);
   }
 
-  selectSynonymus(word) : void {
+  selectSynonymus(word): void {
     this._commandExecutorService.insertSynonymous(word);
   }
-  
+
   ngOnInit() {
     Utils.setSelectionOnChange();
   }

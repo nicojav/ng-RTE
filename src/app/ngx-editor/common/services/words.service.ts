@@ -5,9 +5,9 @@ const header = {
   headers: {
     'Content-Type': 'application/json',
   },
-  method: 'GET', // GET, POST, PUT, DELETE
+  method: 'GET',
   mode: 'no-cors'
-}
+};
 
 @Injectable()
 export class WordsService {
@@ -16,9 +16,7 @@ export class WordsService {
   ) { }
 
   getWords(word) {
-    console.log('word API:', word)
     return this.http.get(`https://api.datamuse.com/words?ml=${word}`);
-    //return this.http.get(`https://jsonplaceholder.typicode.com/albums`);
   }
 
 }

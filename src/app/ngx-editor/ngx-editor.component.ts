@@ -37,7 +37,7 @@ export class EditorComponent implements OnInit, ControlValueAccessor {
   /**
    * events
    */
- 
+
   /** focus the text area when the editor is focussed */
   onEditorFocus() {
     this.textArea.nativeElement.focus();
@@ -48,7 +48,6 @@ export class EditorComponent implements OnInit, ControlValueAccessor {
    * @param html html string from contenteditable
    */
   onContentChange(innerHTML: string): void {
-    console.log('contentChange innerHTML:', innerHTML)
     if (typeof this.onChange === 'function') {
       this.onChange(innerHTML);
       this.togglePlaceholder(innerHTML);
