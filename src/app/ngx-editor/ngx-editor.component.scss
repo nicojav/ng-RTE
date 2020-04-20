@@ -1,4 +1,4 @@
-.ngx-editor {
+.editor {
   position: relative;
 
   ::ng-deep [contenteditable="true"]:empty:before {
@@ -8,10 +8,10 @@
     opacity: 1;
   }
 
-  .ngx-wrapper {
+  .wrapper {
     position: relative;
 
-    .ngx-editor-textarea {
+    .editor-textarea {
       min-height: 5rem;
       padding: 0.5rem 0.8rem 1rem 0.8rem;
       border: 1px solid #ddd;
@@ -37,7 +37,7 @@
       margin-bottom: 0;
     }
 
-    .ngx-editor-placeholder {
+    .editor-placeholder {
       display: none;
       position: absolute;
       top: 0;
@@ -48,7 +48,7 @@
     }
 
     &.show-placeholder {
-      .ngx-editor-placeholder {
+      .editor-placeholder {
         display: block;
       }
     }

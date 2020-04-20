@@ -64,6 +64,10 @@
     .popover-body {
       padding: 0.5rem 0.75rem;
       color: #212529;
+
+      .synonymus {
+        cursor: pointer !important;
+      }
     }
 
     &.bs-popover-top {
