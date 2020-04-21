@@ -1,0 +1,32 @@
+<div class="editor-toolbar">
+  <div class="editor-toolbar-set">
+    <button type="button" class="editor-toolbar-button" (click)="triggerCommand('bold')"
+      title="Bold">
+      <i class="fa fa-bold"></i>
+    </button>
+    <button type="button" class="editor-toolbar-button" (click)="triggerCommand('italic')"
+      title="Italic">
+      <i class="fa fa-italic"></i>
+    </button>
+    <button type="button" class="editor-toolbar-button" (click)="triggerCommand('underline')"
+      title="Underline">
+      <i class="fa fa-underline"></i>
+    </button>
+    <button type="button" class="editor-toolbar-button" (click)="onGetSynonymus()"
+      title="Select Synonymus" [popover]="synonymousTemplate" #imagePopover="bs-popover" containerClass="ngxePopover">
+    <i class="fa fa-strikethrough"></i>
+    </button>
+  </div>
+</div>
+
+<!-- URL Popover template -->
+<ng-template #synonymousTemplate>
+<div *ngIf="(synonymus| async)?.length === 0">
+  No Synonymus Found
+</div>
+<div *ngFor="let singleSyn of synonymus | async | slice:0:10;">
+  <div class="synonymus" (click)="selectSynonymus(singleSyn.word)">
+    {{singleSyn.word}}
+  </div>
+</div>
+</ng-template>

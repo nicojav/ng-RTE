@@ -1,0 +1,12 @@
+<div class="editor" id="Editor"  tabindex="0"
+  (focus)="onEditorFocus()">
+
+  <app-editor-toolbar (execute)="executeCommand($event)"></app-editor-toolbar>
+
+  <!-- text area -->
+  <div class="wrapper" #wrapper>
+    <div class="editor-textarea" contenteditable="true" (input)="onContentChange($event.target.innerHTML)"
+      (blur)="onTextAreaBlur()" #textArea></div>
+  </div>
+
+</div>
