@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NgxEditorModule } from './ngx-editor/ngx-editor.module';
+import { EditorModule } from './editor/editor.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { NgxEditorModule } from './ngx-editor/ngx-editor.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgxEditorModule,
+    EditorModule,
     FormsModule
   ],
   providers: [],

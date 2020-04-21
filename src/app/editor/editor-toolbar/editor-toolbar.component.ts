@@ -6,9 +6,9 @@ import { WordsService} from '../common/services/words.service';
 import * as Utils from '../common/utils/editor.utils';
 
 @Component({
-  selector: 'app-ngx-editor-toolbar',
-  templateUrl: './ngx-editor-toolbar.component.html',
-  styleUrls: ['./ngx-editor-toolbar.component.scss'],
+  selector: 'app-editor-toolbar',
+  templateUrl: './editor-toolbar.component.html',
+  styleUrls: ['./editor-toolbar.component.scss'],
   providers: [PopoverConfig]
 })
 

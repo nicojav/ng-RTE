@@ -7,9 +7,9 @@ import { CommandExecutorService } from './common/services/command-executor.servi
 import * as Utils from './common/utils/editor.utils';
 
 @Component({
-  selector: 'app-ngx-editor',
-  templateUrl: './ngx-editor.component.html',
-  styleUrls: ['./ngx-editor.component.scss'],
+  selector: 'app-editor',
+  templateUrl: './editor.component.html',
+  styleUrls: ['./editor.component.scss'],
   providers: [{
     provide: NG_VALUE_ACCESSOR,
     useExisting: forwardRef(() => EditorComponent),

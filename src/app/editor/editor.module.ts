@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PopoverModule } from 'ngx-bootstrap';
-import { EditorComponent } from './ngx-editor.component';
-import { ToolbarComponent } from './ngx-editor-toolbar/ngx-editor-toolbar.component';
+import { EditorComponent } from './editor.component';
+import { ToolbarComponent } from './editor-toolbar/editor-toolbar.component';
 import { CommandExecutorService } from './common/services/command-executor.service';
 import { WordsService } from './common/services/words.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,4 +16,4 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [CommandExecutorService, WordsService]
 })
 
-export class NgxEditorModule { }
+export class EditorModule { }
