@@ -24,6 +24,12 @@ import { EditorModule } from 'editor';
 })
 ```
 
+### Run Demo App Command
+
+```bash
+npm start
+```
+
 Import [font-awesome](https://github.com/FortAwesome/Font-Awesome) into your application
 
 Then in HTML
